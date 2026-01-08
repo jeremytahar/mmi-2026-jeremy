@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -20,17 +19,13 @@ public class ItemController : TriggerController
     protected override void Interact()
     {
         PickItem();
-
-        CanInteract = false;
+        DisableInteraction();
     }
 
     private void PickItem()
     {
-        //TODO: Replace this with the correct implementation
-        throw new NotImplementedException("PickItem method is yet not implemented.");
+        InventorySystem.Instance.StoreItem(UniqueID);
 
-        //TODO: Store the item into the InventorySystem instance
-        //TODO: Disable interaction from Trigger
-        //TODO: Deactivate item GameObject
+        m_Item.SetActive(false);
     }
 }
