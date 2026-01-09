@@ -828,6 +828,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856957534}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &895231179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5748256051098363166, guid: e65978ac02dabc84d8a31e3e3c4faf7b, type: 3}
+  m_PrefabInstance: {fileID: 2622770926879097639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &895231180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895231179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79c2b93db0968841a3b6ec8d7884f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProximityMessageController
+  m_MessageToPlayer: Congratulations ! You've finished this very very hard game !
+--- !u!114 &895231181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895231179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4708aaf66e0815d42a07f115f1be7330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerController
 --- !u!1001 &1287446811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1239,10 +1269,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trigger_End
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7021778062385797887, guid: e65978ac02dabc84d8a31e3e3c4faf7b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7021778062385797887, guid: e65978ac02dabc84d8a31e3e3c4faf7b, type: 3}
+    - {fileID: 3744049547260998467, guid: e65978ac02dabc84d8a31e3e3c4faf7b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5748256051098363166, guid: e65978ac02dabc84d8a31e3e3c4faf7b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895231181}
+    - targetCorrespondingSourceObject: {fileID: 5748256051098363166, guid: e65978ac02dabc84d8a31e3e3c4faf7b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895231180}
   m_SourcePrefab: {fileID: 100100000, guid: e65978ac02dabc84d8a31e3e3c4faf7b, type: 3}
 --- !u!1001 &5780279662859734560
 PrefabInstance:
